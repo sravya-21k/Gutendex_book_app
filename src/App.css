@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+  background-color: #f4f1e1;
+}
+body {
+  background-color: #f4f0e1;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff; /* White background for the main content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1250px;
+}
+h1,
+h2,
+h3 {
+  color: #444;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+.loading {
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+}
+.error {
+  text-align: center;
+  color: red;
+  font-size: 1.5rem;
+}
+header {
+  background-color: #d1bba7;
+
+  padding: 20px;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 15px;
+  background-color: #8a6e53; /* Wood-like button */
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #6a4e35;
+}
+.book-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.book-card .book-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.book-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+.book-card button {
+  background-color: #f1f1f1;
+  margin-top: 10px;
+}
+.book-card button.active {
+  background-color: #ff4d4d;
+  color: white;
+}
+.favorite-list {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.favorite-list h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "merriweather", serif;
+}
+
+.favorite-list p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.book-card {
+  background-color: #fff8e1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: linear-gradient(135deg, #f7e9d7, #f9f1d5);
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-card h3 {
+  font-size: 1.3rem;
+  color: #5c4033; /* Dark brown */
+  font-family: "Merriweather", serif;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.book-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.book-card button {
+  padding: 12px 20px;
+  background-color: #c3a776;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Merriweather", serif;
+}
+
+.book-card button:hover {
+  background-color: #e53e3e;
+  transform: scale(1.05);
+}
+
+.favorite-list .book-card {
+  display: inline-block;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+header form input {
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+header form input:focus {
+  border-color: #4a90e2;
+}
+header form button {
+  padding: 8px 15px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+header form button:hover {
+  background-color: #357ab7;
+}
+header form button:active {
+  background-color: #2c5f8a;
+}
+@media (max-width: 1200px) {
+  .favorite-list .book-card {
+    width: calc(33.33% - 20px);
+  }
+}
+.Category-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+.Category-menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.Category-menu ul li a:hover {
+  background-color: white;
+  color: #282c34;
+}
+.category-view ul {
+  list-style: none;
+  padding: 0;
+}
+.category-view ul li {
+  margin: 10px 0;
+}
+@media (max-width: 768px) {
+  .favorite-list .book-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .favorite-list .book-card {
+    width: 100%;
+  }
+}
